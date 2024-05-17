@@ -1,9 +1,11 @@
-const AuthLayout = ({ children }: any) => {
+import { ReactNode } from "react";
+
+const AuthLayout = ({ children }: { children: ReactNode }) => {
   return (
-    <div className="flex flex-col gap-y-4">
-      <nav className="bg-red-500 text-white">
+    <div className="h-full flex items-center justify-center bg-blue-400">
+      {/* <nav className="bg-red-500 text-white">
         This is a shared navbar for Auth
-      </nav>
+      </nav> */}
       {children}
     </div>
   );
